@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfabet App</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --heading-color: #111111;
+            --border-color: #eaeaea;
+            --link-color: #007aff;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1c1c1e;
+                --text-color: #e5e5ea;
+                --heading-color: #ffffff;
+                --border-color: #38383a;
+                --link-color: #0a84ff;
+            }
+        }
+
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            max-width: 600px; 
+            margin: 40px auto; 
+            padding: 0 20px; 
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        
+        h1, h2 { color: var(--heading-color); }
+        h1 { border-bottom: 2px solid var(--border-color); padding-bottom: 10px; }
+        
+        .nav-links { margin: 25px 0; padding: 10px 0; border-bottom: 1px dashed var(--border-color); }
+        
+        a {
+            color: var(--link-color);
+            text-decoration: underline;
+            margin-right: 15px;
+            font-weight: 500;
+        }
+        a:hover { opacity: 0.8; }
+        @media (prefers-color-scheme: dark) { a:hover { color: #5ea8ff; opacity: 1; } }
+    </style>
+</head>
+<body>
+
+    <h1>Whiskey Tango</h1>
+    
+    <div class="nav-links">
+        <a href="support.html">Support Page</a>
+        <a href="privacypolicy.html">Privacy Policy</a>
+    </div>
+
+    <h2>About the App</h2>
+    <p>Whiskey Tango is a clean, minimal application for learning and improving fluency with
+       the NATO alphabet, designed for iOS. It is engineered with user privacy at its core,
+       operating without tracking or external servers.</p>
+
+    <h2>Features</h2>
+    <ul>
+	<li><strong>Four activities:</strong> Speak, sort, type and listen to NATO alphabet words.</li>
+	<li><strong>Track your progress:</strong> Accumulated scores plus pace and accuracy graphs.</li>
+        <li><strong>100% Local:</strong> All data is stored directly on your device.</li>
+        <li><strong>No Accounts:</strong> Start using the application instantly without a login.</li>
+    </ul>
+
+</body>
+</html>
