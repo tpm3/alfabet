@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whiskey Tango App Support</title>
+    <style>
+        /* 1. Define Theme Variables */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --heading-color: #111111;
+            --border-color: #eaeaea;
+            --btn-bg: #007aff; /* Apple Blue */
+            --btn-text: #ffffff;
+            --subtext-color: #666666;
+        }
+
+        /* 2. Automatic Dark Mode Overrides */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1c1c1e; /* iOS Dark System Gray */
+                --text-color: #e5e5ea;
+                --heading-color: #ffffff;
+                --border-color: #38383a;
+                --btn-bg: #0a84ff; /* Apple Dark Blue */
+                --btn-text: #ffffff;
+                --subtext-color: #aeaeb2;
+            }
+        }
+
+        /* 3. Base Styles */
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            max-width: 600px; 
+            margin: 40px auto; 
+            padding: 0 20px; 
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        h1, h2 { 
+            color: var(--heading-color); 
+        }
+
+        h1 { 
+            border-bottom: 2px solid var(--border-color); 
+            padding-bottom: 10px; 
+        }
+
+	/* Style all standard text links */
+	a:not(.contact-btn) {
+	    color: var(--btn-bg); /* Uses the bright blue theme color */
+	    text-decoration: underline;
+	    transition: color 0.2s;
+	}
+
+	@media (prefers-color-scheme: dark) {
+	    a:not(.contact-btn):hover {
+		color: #5ea8ff;  /* A crisp, glowing light blue */
+	    }
+	}
+
+        .contact-btn { 
+            display: inline-block; 
+            background-color: var(--btn-bg); 
+            color: var(--btn-text); 
+            padding: 8px 16px; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            font-weight: 0.95em; 
+            margin-top: 15px; 
+            transition: opacity 0.2s;
+        }
+
+        .contact-btn:hover, .contact-btn:active { 
+            opacity: 0.85;
+        }
+
+        ul { 
+            padding-left: 20px; 
+        }
+        
+        .footer-text { 
+            margin-top: 40px; 
+            font-size: 0.9em; 
+            color: var(--subtext-color); 
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Whiskey Tango App Support</h1>
+    <p>Thank you for using Whiskey Tango!
+       We are keen to provide you with the best experience possible.
+       If you are experiencing any technical issues, have questions,
+       or want to share feedback, please reach out to us.</p>
+
+    <h2>How to Contact Us</h2>
+    <p>The fastest way to get support or report a bug is by sending us an email.
+       Click the button below or email us directly at
+       <strong>iosalfabetapp@gmail.com</strong>.</p>
+    
+    <a href="mailto:iosalfabetapp@gmail.com"
+	class="contact-btn">Contact Support Via Email</a>
+
+    <h2>Frequently Asked Questions & Common Issues</h2>
+    <ul>
+	<li><strong>Can I change my name or callsign in the app?</strong>
+	Yes - use the Settings app.</li>
+	<li><strong>Can I turn the firework display off?</strong>
+	Yes - use the Settings app.</li>
+        <li><strong>How do I report a bug?</strong>
+	Please email us with a complete description of the issue, what
+	screen you were on, and the specific device you were using.</li>
+        <li><strong>How can I request a feature?</strong>
+	We love feedback!
+	Send your ideas straight to our email.</li>
+	<li><strong>Where is my data stored?</strong>
+	Whiskey Tango operates entirely locally on your device. There
+	are no accounts created, and we do not collect,
+	or store <strong>any</strong> of your personal data on
+	external servers.</li>
+	<li><strong>Where is your privacy policy?</strong>
+	<a href="privacypolicy.html">Here.</a>
+    </ul>
+
+    <p class="footer-text">Response Time: We typically respond to all support requests within 72 hours.</p>
+
+</body>
+</html>
